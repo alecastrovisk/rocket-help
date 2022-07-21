@@ -44,8 +44,6 @@ export function SignIn() {
     });
   }
  
-  useEffect(() => {}, []);
-
   return(
     <VStack flex={1} alignItems="center" bg="gray.500" px={8} pt={24}>
       <Logo />

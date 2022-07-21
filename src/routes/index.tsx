@@ -8,20 +8,22 @@ import { Loading } from '../components/loading';
 
 
 export function Routes() {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<FirebaseAuthTypes.User>();
+
   useEffect(() => {
-    const subscriber = auth()
+    const subscriber =  auth()
     .onAuthStateChanged(response => {
       setUser(response);
-      setLoading(false);
+      setIsLoading(false);
     });
+    console.log(user);
 
-    return subscriber();
-  }, []);
+    // subscriber();
+  },[user]);
 
-  if(loading) {
-    return <Loading />;
+  if(isLoading) {
+    return <Loading />
   }
   return (
     <NavigationContainer>
