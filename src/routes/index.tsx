@@ -17,7 +17,7 @@ export function Routes() {
       setUser(response);
       setIsLoading(false);
     });
-    console.log(user);
+    console.log('user: ',user);
 
     // subscriber();
   },[user]);
