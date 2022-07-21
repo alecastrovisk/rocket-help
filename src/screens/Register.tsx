@@ -1,7 +1,7 @@
 import { VStack } from 'native-base';
 import { Button } from '../components/Button';
 import { Header } from '../components/Header';
-import { Input } from './Input';
+import { Input } from '../components/Input';
 
 export function Register() {
   return (
