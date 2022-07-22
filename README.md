@@ -16,8 +16,8 @@ In the development of RocketHelp, React Native was used with TypeScript in the E
 
 ### Stacks
 - Typescript
--React Native
--Expo
--Native base
--React Navigation
--Firebase
+- React Native
+- Expo
+- Native base
+- React Navigation
+- Firebase
