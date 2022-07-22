@@ -53,6 +53,7 @@ export function Home() {
 
   useEffect(() => {
     setIsLoading(true);
+
     const subscriber = firestore()
     .collection('orders')
     .where('status', '==', statusSelected)
@@ -101,7 +102,7 @@ export function Home() {
             Meus chamados
           </Heading>
           <Text color="gray.200">
-            1
+            {orders.length}
           </Text>
         </HStack>
 
